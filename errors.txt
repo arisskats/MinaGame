@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 31: 'outline_color' is not a keyword argument or valid child of the frame statement.
+    outline_color "#00ffcc"
+                 ^
+
+Ren'Py Version: Ren'Py 8.5.2.26010301
+Mon Feb 23 12:27:16 2026

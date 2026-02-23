@@ -1,0 +1,12 @@
+# Visual Task: bg room_night
+- Style: Minimalist and Dark.
+- Setting: A developer's room at night (Aris's "Anchor").
+- Elements: A desk with a glowing laptop as the main light source. High contrast between the laptop light and the surrounding shadows. Subtle details of a modern room (maybe a silhouette of a bed or a CrossFit equipment piece in the dark).
+- Vibe: Quiet, focused, atmospheric. Preparation for the neon portal glitch.
+
+# Visual Task: mina neon_casual
+- Style: Cyberpunk/Future Neo-Athenian.
+- Character: Mina (as seen in avatars).
+- Outfit: Casual but high-tech. Maybe an oversized tech-wear hoodie with glowing fiber-optic patterns or a sleek bodysuit with neon accents.
+- Expression: Welcoming, a bit mysterious, alluring.
+- Background: Transparent (sprite).

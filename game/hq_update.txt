@@ -1,0 +1,42 @@
+# Visual Prompt for OpenAI:
+A panoramic 8k ultra-detailed shot of the interior of the Protocol Architects Headquarters in Neo-Athenia 2099. The room is made of polished black crystal and matte dark metal. Massive floor-to-ceiling windows show a rainy cyberpunk city with neon skyscrapers at night. Holographic data streams and blue/cyan digital interfaces are floating in the air, casting a soft glow. Sleek, ergonomic futuristic furniture. Atmospheric, cinematic lighting with deep shadows and magenta accents. Professional, imposing, and technologically advanced atmosphere.
+
+# Ren'Py Script Update (Logic Check Integration)
+label protocol_hq:
+    scene bg protocol_hq
+    with fade
+    
+    "Το Αρχηγείο των Protocol Architects είναι ακόμα πιο επιβλητικό από κοντά. Ο ήχος των δεδομένων που ρέουν μοιάζει με ψίθυρο από το μέλλον."
+    
+    show mina hq at center:
+        zoom 0.45
+        yalign 1.0
+    with dissolve
+    
+    m "Καλωσόρισες στην καρδιά της Πλέξης, [player_name]. Εδώ είναι που ο κώδικας γίνεται πραγματικότητα."
+    m "Σε κάλεσα εδώ γιατί η Βέρα έχει αρχίσει να αφήνει 'ίχνη' στα συστήματά μας. Χρειάζομαι το δικό σου καθαρό μυαλό για να τα εντοπίσουμε."
+    
+    a "Είμαι έτοιμος, Μίνα. Τι πρέπει να κάνω;"
+    
+    m "Σύνδεσε το Neural Interface σου με τον κεντρικό server. Θα προσπαθήσουμε να αποκωδικοποιήσουμε ένα πακέτο δεδομένων από το Sector 13."
+    
+    menu:
+        "«Επίθεση κατά μέτωπο στον κώδικα» (Logic 10)":
+            if logic_core >= 10:
+                $ affection += 15
+                m "Εντυπωσιακό! Η ταχύτητά σου είναι απίστευτη. Βρήκες την τρύπα ασφαλείας σε δευτερόλεπτα."
+                m "Μαζί σου, η Βέρα δεν έχει καμία ελπίδα. 😉"
+            else:
+                m "Πρόσεχε... ο κώδικας είναι πολύ περίπλοκος ακόμα για σένα. Άφησέ με να σε καθοδηγήσω πιο προσεκτικά."
+                $ logic_core += 2
+
+        "«Ανάλυση των μοτίβων της Βέρας»":
+            $ logic_core += 5
+            m "Σωστή και μεθοδική κίνηση. Καταλαβαίνεις πώς σκέφτεται... αυτό είναι το κλειδί."
+            
+        "«Προτιμώ την 'ιδιωτική' σου πλευρά...»" if social_pulse >= 10:
+            $ affection += 20
+            m "Άρη... σε ένα δωμάτιο γεμάτο αισθητήρες, εσύ επιλέγεις να εστιάσεις σε μένα;"
+            m "Μου αρέσει ο τρόπος που αγνοείς τους κανόνες. 🫦"
+            
+    jump travel_menu
