@@ -1,0 +1,14 @@
+﻿# Ren'Py generated files
+*.rpyc
+log.txt
+errors.txt
+traceback.txt
+
+# Caches and saves
+game/cache/
+game/saves/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
